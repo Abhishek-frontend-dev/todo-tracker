@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-purple-100">
+    <div
+      class="bg-purple-50 mx-auto mt-30 mb-30 p-2 w-300 rounded-2xl drop-shadow-2xl"
+    >
+      <div id="task-container" class="p-4 m-auto">
+        <div id="header" class="font-bold text-3xl flex justify-between">
+          <div id="logo">
+            <span class="text-red-700">Task</span
+            ><span class="text-cyan-900">Add</span>
+          </div>
+        </div>
+        <!---input field -->
+        <div id="input-field" class="mt-6 w-full space-x-4 flex">
+          <input
+            type="text"
+            id="todo"
+            placeholder="Enter task title"
+            class="rounded-s-4xl w-100 bg-white text-center font-normal text-xl"
+          />
+          <input
+            type="text"
+            name=""
+            id="todo-comment"
+            placeholder="Add Comment (optional)"
+            class="rounded-e-3xl w-full bg-white text-center font-normal text-xl"
+          />
+          <button
+            id="add-btn"
+            class="w-100 p-4 bg-blue-800 rounded-2xl cursor-pointer font-bold text-white active:bg-blue-950 transition-all active:shadow-2xl active:rotate-4"
+          >
+            Add Task
+          </button>
+        </div>
+
+        <!---todos-->
+        <div id="todo-con" class="w-full mt-4 my-4"></div>
+        <!---status-->
+        <div
+          id="status"
+          class="w-full bg-blue-950 p-4 rounded-2xl mt-5 text-white font-bold flex justify-between"
+        ></div>
+      </div>
+    </div>
+
+    <!--scripts-->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
